@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<statistics>
+    <statistics>
+        <month>JANUARY</month>
+        <value>5</value>
+    </statistics>
+    <statistics>
+        <month>FEBRUARY</month>
+        <value>7</value>
+    </statistics>
+    <statistics>
+        <month>MARCH</month>
+        <value>6</value>
+    </statistics>
+    <statistics>
+        <month>APRIL</month>
+        <value>7</value>
+    </statistics>
+    <statistics>
+        <month>MAY</month>
+        <value>3</value>
+    </statistics>
+</statistics>

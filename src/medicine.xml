@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<medicines>
+    <medicine>
+        <id>1</id>
+        <name>Mai Thanh Toan</name>
+        <NSX>01/01/2020</NSX>
+        <HSD>11/01/2020</HSD>
+        <idBill>2</idBill>
+        <idProduction>2</idProduction>
+        <productionSource>HN</productionSource>
+    </medicine>
+    <medicine>
+        <id>1</id>
+        <name>Mai Thanh Toan</name>
+        <NSX>01/01/2020</NSX>
+        <HSD>11/01/2020</HSD>
+        <idBill>2</idBill>
+        <idProduction>2</idProduction>
+        <productionSource>HN</productionSource>
+    </medicine>
+</medicines>

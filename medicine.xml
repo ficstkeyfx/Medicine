@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<medicines>
+    <medicines>
+        <id>0</id>
+        <name>Thuốc tây</name>
+        <idBill>1xbus</idBill>
+        <idProduction>222bj</idProduction>
+        <productionSource>Công ty Thịnh Nam</productionSource>
+        <NSX>11/02/2022</NSX>
+        <HSD>11/02/2023</HSD>
+    </medicines>
+    <medicines>
+        <id>2</id>
+        <name>Thuốc 1</name>
+        <idBill>1000</idBill>
+        <idProduction>1000</idProduction>
+        <productionSource>Công ty 1</productionSource>
+        <NSX>22/11/2002</NSX>
+        <HSD>22/11/2003</HSD>
+    </medicines>
+    <medicines>
+        <id>1</id>
+        <name>Thuốc 2</name>
+        <idBill>1000</idBill>
+        <idProduction>1001</idProduction>
+        <productionSource>Công ty 1</productionSource>
+        <NSX>29/02/2020</NSX>
+        <HSD>29/02/2020</HSD>
+    </medicines>
+</medicines>
