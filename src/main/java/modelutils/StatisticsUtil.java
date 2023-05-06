@@ -87,10 +87,4 @@ public class StatisticsUtil {
     public void setListStatistics(List<StatisticsModel> listStatistics) {
         this.listStatistics = listStatistics;
     }
-    
-    
-    
-    public static void main(String[] args) {
-        StatisticsUtil s = new StatisticsUtil();
-    }
 }

@@ -17,7 +17,7 @@ import javax.swing.event.ListSelectionListener;
 import model.MedicineModel;
 import modelutils.MedicineUtil;
 import modelutils.StatisticsUtil;
-import view.Dash;
+import view.DashView;
 import view.LoginView;
 
 
@@ -26,11 +26,11 @@ import view.LoginView;
  * @author PV
  */
 public class DashBoardController {
-    private Dash view;
+    private DashView view;
     private MedicineUtil medicines;
     private StatisticsUtil stats;
 
-    public DashBoardController(Dash view) {
+    public DashBoardController(DashView view) {
         this.view = view;
         medicines = new MedicineUtil();  
         stats = new StatisticsUtil();

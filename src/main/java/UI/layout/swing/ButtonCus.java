@@ -17,7 +17,7 @@ public class ButtonCus extends JButton {
     private float animatSize;
     private Point pressedPoint;
     private float alpha;
-    private Color effectColor = new Color(255, 218, 0);
+    private Color effectColor = new Color(32, 136, 203);
     private Color overColor = new Color(255, 218, 0);
 
     private float ovalH = 1;
@@ -38,6 +38,58 @@ public class ButtonCus extends JButton {
         this.ovalH = ovalH;
     }
 
+    public void setEnabled(boolean x){
+        super.setEnabled(x);
+        if(x==false) {
+            setBackground(effectColor);
+            addMouseListener(new MouseAdapter() {
+                @Override
+                public void mousePressed(MouseEvent e) {
+                    JButton button = (JButton) e.getSource();
+                    button.setBackground(effectColor);
+                    targetSize = Math.max(getWidth(), getHeight()) * 2;
+                    animatSize = 0;
+                    pressedPoint = e.getPoint();
+                    alpha = 0.5f;
+                    if (animator.isRunning()) {
+                        animator.stop();
+                    }
+                    animator.start();
+                }
+                public void mouseEntered(MouseEvent e) {
+                    JButton button = (JButton) e.getSource();
+                    button.setBackground(effectColor);
+                }
+                public void mouseExited(MouseEvent e) {
+                    JButton button = (JButton) e.getSource();
+                    button.setBackground(effectColor);
+                }
+            });
+        }else{
+            addMouseListener(new MouseAdapter() {
+                @Override
+                public void mousePressed(MouseEvent me) {
+                    targetSize = Math.max(getWidth(), getHeight()) * 2;
+                    animatSize = 0;
+                    pressedPoint = me.getPoint();
+                    alpha = 0.5f;
+                    if (animator.isRunning()) {
+                        animator.stop();
+                    }
+                    animator.start();
+                }
+                public void mouseEntered(MouseEvent e) {
+                    JButton button = (JButton) e.getSource();
+                    button.setBackground(overColor);
+                }
+                public void mouseExited(MouseEvent e) {
+                    JButton button = (JButton) e.getSource();
+                    button.setBackground(effectColor);
+                }
+            });
+        }
+    }
+    
     public ButtonCus() {
             setContentAreaFilled(false);
             setBorder(new EmptyBorder(5, 0, 5, 0));

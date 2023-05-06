@@ -6,8 +6,7 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import model.UserModel;
-import view.Dash;
-import view.DashBoardView;
+import view.DashView;
 import view.LoginView;
 
 /**
@@ -17,7 +16,7 @@ import view.LoginView;
 public class LoginController {
     private UserModel userModel;
     private LoginView loginView;
-    private Dash dashBoardView;
+    private DashView dashBoardView;
 
     public LoginController(LoginView view) {
         UserModel user = view.getUserModel();
@@ -39,7 +38,7 @@ public class LoginController {
             System.out.println(user.getPassword());
             if ("1".equals(user.getUsername())&&"1".equals(user.getPassword())) {
                 // nếu đăng nhập thành công, mở màn hình quản lý sinh viên
-                dashBoardView = new Dash();
+                dashBoardView = new DashView();
                 DashBoardController dashBoardController = new DashBoardController(dashBoardView);
 //                studentController.();
                 loginView.setVisible(false);

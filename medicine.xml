@@ -27,4 +27,22 @@
         <NSX>29/02/2020</NSX>
         <HSD>29/02/2020</HSD>
     </medicines>
+    <medicines>
+        <id>3</id>
+        <name>Thuốc 3</name>
+        <idBill>1000</idBill>
+        <idProduction>1002</idProduction>
+        <productionSource>Công ty 2</productionSource>
+        <NSX>12/02/2022</NSX>
+        <HSD>28/02/2022</HSD>
+    </medicines>
+    <medicines>
+        <id>4</id>
+        <name>Thuốc đá</name>
+        <idBill>123</idBill>
+        <idProduction>1233</idProduction>
+        <productionSource>lào</productionSource>
+        <NSX>09/04/2002</NSX>
+        <HSD>01/01/2020</HSD>
+    </medicines>
 </medicines>
