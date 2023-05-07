@@ -36,7 +36,7 @@ Là ứng dụng sử dụng để thêm, sửa, xóa và thống kê thuốc tr
 
 #### Màn hình đăng nhập
 
-![Login](https://github.com/ficstkeyfx/Medicine/blob/main/image.png?raw=true)
+![Login](https://github.com/ficstkeyfx/Medicine/blob/main/readmeImage/Demo/LoginFrame.png?raw=true)
 
 - Tài khoản đăng nhập mặc định cho ứng dụng là  và mật khẩu là 1
 - Nếu nhập sai tài khoản mật khẩu, ứng dụng sẽ đưa ra thông báo tài khoản mật khẩu bị sai
