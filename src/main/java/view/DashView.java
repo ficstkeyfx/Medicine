@@ -1,7 +1,7 @@
 package view;
 
-import UI.layout.swing.ButtonCus;
-import UI.layout.swing.Combobox;
+import view.custom.Button;
+import view.custom.Combobox;
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -141,11 +141,11 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
             }
         });
 
-        btnExit.setIcon(new javax.swing.ImageIcon("src/main/java/Gambar/Exit.png")); // NOI18N
+        btnExit.setIcon(new javax.swing.ImageIcon("src/main/java/icon/Exit.png")); // NOI18N
         btnExit.setContentAreaFilled(false);
         btnExit.setFocusable(false);
         btnExit.setOpaque(true);
-        btnExit.setRolloverIcon(new javax.swing.ImageIcon("src/main/java/gambar/Exit (2).png")); // NOI18N
+        btnExit.setRolloverIcon(new javax.swing.ImageIcon("src/main/java/icon/Exit (2).png")); // NOI18N
         btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnExitMouseEntered(evt);
@@ -160,11 +160,11 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
             }
         });
 
-        btnMaximize.setIcon(new javax.swing.ImageIcon("src/main/java/Gambar/Maximize.png")); // NOI18N
+        btnMaximize.setIcon(new javax.swing.ImageIcon("src/main/java/icon/Maximize.png")); // NOI18N
         btnMaximize.setContentAreaFilled(false);
         btnMaximize.setFocusable(false);
         btnMaximize.setOpaque(true);
-        btnMaximize.setRolloverIcon(new javax.swing.ImageIcon("src/main/java/Gambar/Maximize (2).png")); // NOI18N
+        btnMaximize.setRolloverIcon(new javax.swing.ImageIcon("src/main/java/icon/Maximize (2).png")); // NOI18N
         btnMaximize.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnMaximizeMouseEntered(evt);
@@ -179,11 +179,11 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
             }
         });
 
-        btnMinimize.setIcon(new javax.swing.ImageIcon("src/main/java/gambar/Minimize.png")); // NOI18N
+        btnMinimize.setIcon(new javax.swing.ImageIcon("src/main/java/icon/Minimize.png")); // NOI18N
         btnMinimize.setContentAreaFilled(false);
         btnMinimize.setFocusable(false);
         btnMinimize.setOpaque(true);
-        btnMinimize.setRolloverIcon(new javax.swing.ImageIcon("src/main/java/gambar/Minimize (2).png")); // NOI18N
+        btnMinimize.setRolloverIcon(new javax.swing.ImageIcon("src/main/java/icon/Minimize (2).png")); // NOI18N
         btnMinimize.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnMinimizeMouseEntered(evt);
@@ -222,7 +222,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
 
         pnlMenu.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("src/main/java/Gambar/User.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("src/main/java/icon/User.png")); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 20)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(44, 62, 80));
@@ -406,7 +406,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         jLabel6.setOpaque(true);
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setIcon(new javax.swing.ImageIcon("src/main/java/Gambar/file-viewer.png")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon("src/main/java/icon/file-viewer.png")); // NOI18N
 
         jLabel6.addMouseListener(new MouseAdapter(){
                 @Override
@@ -450,7 +450,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         jLabel7.setOpaque(true);
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setIcon(new javax.swing.ImageIcon("src/main/java/Gambar/note.png")); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon("src/main/java/icon/note.png")); // NOI18N
         jLabel7.addMouseListener(new MouseAdapter(){
                 @Override
                 public void mouseClicked(MouseEvent e) {
@@ -500,7 +500,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         });
                 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setIcon(new javax.swing.ImageIcon("src/main/java/Gambar/bar-chart.png")); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon("src/main/java/icon/bar-chart.png")); // NOI18N
 
         jLabel13.addMouseListener(new MouseAdapter(){
                 @Override
@@ -612,7 +612,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         pnlSearch.add(searchField, BorderLayout.WEST);
         pnlSearch.add(typeSearch, BorderLayout.CENTER);
         
-        searchButton = new ButtonCus();
+        searchButton = new Button();
         searchButton.setText("Search");
         searchButton.setPreferredSize(new Dimension(80,30));
         searchButton.setSize(50,50);
@@ -626,7 +626,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         pnlManage = new JPanel();
         pnlManage.setLayout(new BorderLayout());
         
-        addButton = new ButtonCus();
+        addButton = new Button();
         addButton.setText("Add");
         addButton.setPreferredSize(new Dimension(80,30));
         addButton.setSize(50,50);
@@ -635,7 +635,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         addButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         
                 
-        deleteButton = new ButtonCus();
+        deleteButton = new Button();
         deleteButton.setText("Delete");
         deleteButton.setPreferredSize(new Dimension(80,30));
         deleteButton.setSize(50,50);
@@ -643,7 +643,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         deleteButton.setForeground(Color.WHITE);
         deleteButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         
-        editButton = new ButtonCus();
+        editButton = new Button();
         editButton.setText("Edit");
         editButton.setPreferredSize(new Dimension(80,30));
         editButton.setSize(50,50);
@@ -667,7 +667,7 @@ public class DashView extends javax.swing.JFrame implements ActionListener{
         pnlSort = new JPanel();
         pnlSort.setLayout(new BorderLayout());
         
-        sortButton = new ButtonCus();
+        sortButton = new Button();
         sortButton.setText("Sort");
         sortButton.setPreferredSize(new Dimension(80,30));
         sortButton.setSize(50,50);
