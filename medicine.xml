@@ -45,4 +45,13 @@
         <NSX>09/04/2002</NSX>
         <HSD>01/01/2020</HSD>
     </medicines>
+    <medicines>
+        <id>5</id>
+        <name>Thuốc Cung Đình</name>
+        <idBill>1</idBill>
+        <idProduction>2</idProduction>
+        <productionSource>Lào</productionSource>
+        <NSX>29/02/2020</NSX>
+        <HSD>28/02/2021</HSD>
+    </medicines>
 </medicines>

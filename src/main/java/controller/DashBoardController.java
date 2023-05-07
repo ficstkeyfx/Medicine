@@ -148,28 +148,43 @@ public class DashBoardController {
         @Override
         public void actionPerformed(ActionEvent e) {
             String typeSort = view.getTypeSort();
+            if(typeSort==null) typeSort="";
             switch (typeSort) {
-                case "ID" ->                 {
+                case "ID": {
                     medicines.sortStudentByID();
+                    break;
                 }
-                case "Tên" ->                     {
+                case "Tên" :                     {
                     medicines.sortMedicineByName();
+                    break;
                 }
-                case "NSX" ->                     {
+                case "NSX" :                     {
                     medicines.sortMedicineByNSX();
+                    break;
                 }
-                case "HSD" ->                     {
+                case "HSD" :                     {
                     medicines.sortMedicineByHSD();
+                    break;
                 } 
-                case "Số lô" ->                     {
+                case "Số lô" :                    {
                     medicines.sortMedicineByIdBill();
+                    break;
                 } 
-                case "Số hàng" ->                     {
+                case "Số hàng" :                    {
+                    
                     medicines.sortMedicineByIdProduction();
+                    break;
                 } 
-                default -> 
-                {
+                
+                case "Nguồn nhập":{
                     medicines.sortMedicineByProductionSource();
+                    break;
+                }
+                
+                default : 
+                {
+                    view.showMessage("Hãy chọn tiêu chí sắp xếp");
+                    return;
                 }
             }
             view.showListmMedicines(medicines.getListMedicines());
@@ -289,51 +304,62 @@ public class DashBoardController {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            System.out.println("Bắt đầu");
             List<MedicineModel> searchMedicine = new ArrayList<>();
             String typeSearch = view.getTypeSearch();
             String searchField = view.getSearchField().toLowerCase();
-            System.out.println(typeSearch);
-            System.out.println(searchField);
+            if(typeSearch==null){
+                typeSearch = "";
+            }
             switch (typeSearch) {
-                case "ID" ->                 {
+                case "ID" :                 {
                     for(MedicineModel medicineModel: medicines.getListMedicines()){
                        if(String.valueOf(medicineModel.getId()).toLowerCase().contains(searchField)) {
                            //System.out.println(medicineModel.getId());
                            searchMedicine.add(medicineModel);
                        }
                     }
+                    break;
                 }
-                case "Tên" ->                     {
+                case "Tên" :                     {
                     for(MedicineModel medicineModel: medicines.getListMedicines()){
                        if(String.valueOf(medicineModel.getName()).toLowerCase().contains(searchField)) searchMedicine.add(medicineModel);
                     }
+                    break;
                 }
-                case "NSX" ->                     {
+                case "NSX" :                     {
                     for(MedicineModel medicineModel: medicines.getListMedicines()){
                        if(String.valueOf(medicineModel.getNSX()).toLowerCase().contains(searchField)) searchMedicine.add(medicineModel);
                     }
+                    break;
                 }
-                case "HSD" ->                     {
+                case "HSD" :                     {
                     for(MedicineModel medicineModel: medicines.getListMedicines()){
                        if(String.valueOf(medicineModel.getHSD()).toLowerCase().contains(searchField)) searchMedicine.add(medicineModel);
                     }
+                    break;
                 } 
-                case "Số lô" ->                     {
+                case "Số lô" :                     {
                     for(MedicineModel medicineModel: medicines.getListMedicines()){
                        if(String.valueOf(medicineModel.getIdBill()).toLowerCase().contains(searchField)) searchMedicine.add(medicineModel);
                     }
+                    break;
                 } 
-                case "Số hàng" ->                     {
+                case "Số hàng" :                     {
                     for(MedicineModel medicineModel: medicines.getListMedicines()){
                        if(String.valueOf(medicineModel.getIdProduction()).toLowerCase().contains(searchField)) searchMedicine.add(medicineModel);
                     }
+                    break;
                 } 
-                default -> 
+                case "Nguồn nhập" : 
                 {
                     for(MedicineModel medicineModel: medicines.getListMedicines()){
                        if(String.valueOf(medicineModel.getProductionSource()).toLowerCase().contains(searchField)) searchMedicine.add(medicineModel);
                     }
+                    break;
+                }
+                default: {
+                    view.showMessage("Hãy chọn tiêu chí tìm kiếm");
+                    return;
                 }
             }
             showMedicineList(searchMedicine);

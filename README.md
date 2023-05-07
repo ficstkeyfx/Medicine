@@ -22,6 +22,8 @@ Là ứng dụng sử dụng để thêm, sửa, xóa và thống kê thuốc tr
 
  #### Tải mã nguồn project
 
+* Link mã nguồn [Medicine] (https://github.com/ficstkeyfx/Medicine)
+
 * Clone project
 
 ```bash
